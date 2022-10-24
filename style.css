@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap');
+
+:root {
+  --main-font-color: #212529;
+  --background-color: #f1f3f5;
+  --container-color: #ffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--main-font-color);
+  display: flex;
+  justify-content: center;
+  margin: 24px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+thead tr {
+  background-color: #fa5252;
+  color: var(--container-color);
+  border-bottom: 2px solid var(--main-font-color);
+  text-align: center;
+}
+
+td {
+  padding: 16px;
+}
+
+tbody tr:nth-child(even) {
+  background: #ffe3e3;
+}
+
+tbody tr:nth-child(odd) {
+  background: var(--container-color);
+}
+
+h1 {
+  text-align: center;
+  margin: 0px;
+  padding: 16px 0px;
+  border-bottom: 2px solid var(--main-font-color);
+}
+
+#userTable tbody tr:hover {
+  cursor: pointer;
+  background: var(--background-color);
+}
+
+#userPostsPlaceholder {
+  background-color: var(--container-color);
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 0px 16px;
+  width: 100%;
+}
+
+.userPostsContainer {
+  margin: 0px 16px;
+  width: 100%;
+}
+
+.userPostsContainer,
+.usersContainer {
+  border: 2px solid var(--main-font-color);
+  margin: 0px 16px;
+  background-color: var(--container-color);
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: inline-block;
+}
+
+.tableContainer {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 80vh;
+}
